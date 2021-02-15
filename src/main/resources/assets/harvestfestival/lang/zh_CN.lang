@@ -379,7 +379,7 @@ harvestfestival.meal.cooked.salmon.description=在烤箱里用莳萝黄油烤就
 harvestfestival.meal.pumpkin.pie.description=感恩节习俗，当季最受欢迎的食物。有些美国批发商做的派还不错。为什么会有人把南瓜放在罐子里？谁做的？
 harvestfestival.meal.brown.mushroom.description=这道令人垂涎的蘑菇菜品里满是野味。为了前无古人的美味汤品，一定要摘点后无来者的蘑菇。
 harvestfestival.meal.rabbit.stew.description=用兔子身上肉多的地方做成汤，冬天来上热腾腾的一大碗简直完美。和土豆泥以及脆面包一起吃更配哦！
-harvestfestival.meal.beetroot.soup.description=看上去像是一碗血一样。我希望它尝起来能好一点。呕….呃…我是说…嗯。吸血鬼最喜欢的汤品，冷热俱佳。
+harvestfestival.meal.beetroot.soup.description=看上去像是一碗血一样。我希望它尝起来能好一点。呕…呃…我是说…嗯。吸血鬼最喜欢的汤品，冷热俱佳。
 
 #Ingredients
 harvestfestival.ingredient.butter=黄油
@@ -938,7 +938,7 @@ harvestfestival.npc.katlin.gift.terrible=你这是要气死我啊？真是一件
 harvestfestival.npc.katlin.gift.no=我不能收下它，它太珍贵了。
 harvestfestival.npc.katlin.gift.reject=你今天已经送过我礼物了，年轻人。
 harvestfestival.npc.katlin.festival.chicken1=一只幸福的小鸡住在庄园中过着幸福的生活，还是庄园主人的妻子过着幸福的生活？
-harvestfestival.npc.katlin.festival.chicken2=有一次，有人告诉我鸡喜欢栖息在一根杆上。但我缺不知道为什么…
+harvestfestival.npc.katlin.festival.chicken2=有一次，有人告诉我鸡喜欢栖息在一根杆上。但我却不知道为什么…
 harvestfestival.npc.katlin.festival.cooking1=每天都是一样的，我听闻有些年轻人通过嘲笑烹饪来打动这座城镇。
 harvestfestival.npc.katlin.festival.cooking2=你知道如何每年都在丰收节这盛大的节日中取得胜利吗？不，我永远不会告诉你。
 harvestfestival.npc.katlin.festival.cow1=又是平常的一天，今天我要用手亲自搅拌黄油和奶油。
@@ -1002,7 +1002,7 @@ harvestfestival.npc.cloe.greeting4=没有什么比一部恐怖电影更让我着
 harvestfestival.npc.cloe.greeting5=老实说，我对未来有点迷茫。
 harvestfestival.npc.cloe.greeting6=这个世界已经乱套了，我对他一点都不了解。
 harvestfestival.npc.cloe.greeting7=我五岁的时候就已经读了200本书。
-harvestfestival.npc.cloe.greeting8=我不能理解为什么Abi喜欢可爱的东西，那太假了，简直能把我逼疯。
+harvestfestival.npc.cloe.greeting8=我不能理解为什么Abii喜欢可爱的东西，那太假了，简直能把我逼疯。
 harvestfestival.npc.cloe.greeting9=我们是如此的渺小。
 harvestfestival.npc.cloe.greeting10=拜托不要告诉任何人。我喜欢企鹅，这我知道，我知道…
 harvestfestival.npc.cloe.greeting11=我的叔叔有点奇怪…他把大部分的时间都花在办公桌上，不停的在工作，我不知道他在忙什么。我想是他之前说过的改装。也许有一天他能获得新生吧。
@@ -1271,7 +1271,7 @@ harvestfestival.npc.tiberius.festival.new.years1=每一年的过去，都会听�
 harvestfestival.npc.tiberius.festival.new.years2=想要在新年时间还没到就叫Fenn去睡觉，是根本不可能达成的事情。
 harvestfestival.npc.tiberius.festival.sheep1=历史变迁的轨迹中，我们不难发现绵羊的存在，不过就算在怎么说，羊毛的存在都是无庸置疑的。
 harvestfestival.npc.tiberius.festival.sheep2=传说有一个抓住狼人的办法，就是在满月的午夜把一只绵羊放在狼的领地前，在那边准备好一个银制的陷阱，就有机会可以抓到狼或是狼人。
-harvestfestival.npc.tiberius.festival.starry.night1=%4$s你知道吗，这个特别的节日对我来说是一个煎熬。但Fenn很享受这个家庭聚餐，他总是会问我妈妈会不会一起加入….可是她却离开了我们。
+harvestfestival.npc.tiberius.festival.starry.night1=%4$s你知道吗，这个特别的节日对我来说是一个煎熬。但Fenn很享受这个家庭聚餐，他总是会问我妈妈会不会一起加入…可是她却离开了我们。
 harvestfestival.npc.tiberius.festival.starry.night2=如果可以的话，我们可以一起加入你的公园聚餐。
 
 #Jakob
@@ -1296,7 +1296,7 @@ harvestfestival.npc.jacob.gift.dislike=我觉得我应该不喜欢这个。
 harvestfestival.npc.jacob.gift.bad=我真的不喜欢它就像我不喜欢地下一样。
 harvestfestival.npc.jacob.gift.terrible=你疯了吗？我永远不会想要这个。
 harvestfestival.npc.jacob.festival.chicken1=鸡的粪便跟鱼一样都可以制作很好的肥料使用，但鸡的粪便显然很臭。
-harvestfestival.npc.jacob.festival.chicken2=如果你喂鸡吃牡蛎的壳，它们生产下的蛋壳会有很好的质地。可能是因为….钙元素的关系吧。
+harvestfestival.npc.jacob.festival.chicken2=如果你喂鸡吃牡蛎的壳，它们生产下的蛋壳会有很好的质地。可能是因为…钙元素的关系吧。
 harvestfestival.npc.jacob.festival.cooking1=好吃的鱼配薯条，会让节日充满生机。
 harvestfestival.npc.jacob.festival.cooking2=鳕鱼是一种非常适合来油炸的鱼类。
 harvestfestival.npc.jacob.festival.cow1=我们需要一个关于钓鱼的节日，我一定要跟镇长提议来申办这个节日。
@@ -1318,7 +1318,7 @@ harvestfestival.npc.fenn.greeting2=别害怕，虽然我还小，但是我懂很
 harvestfestival.npc.fenn.greeting3=我希望我爸爸没有那么怕我。
 harvestfestival.npc.fenn.greeting4=你听说过‘我的世界’吗？这是我最喜欢的游戏！
 harvestfestival.npc.fenn.greeting5=贵安！
-harvestfestival.npc.fenn.greeting6=Abi经常躲着我，你见过她吗？
+harvestfestival.npc.fenn.greeting6=Abii经常躲着我，你见过她吗？
 harvestfestival.npc.fenn.greeting7=我希望我爸比能多让我出门。
 harvestfestival.npc.fenn.greeting8=我长大了要成为宇宙一流的超级无敌神奇宝贝训练大师！
 harvestfestival.npc.fenn.greeting9=我最喜欢的宠物小精灵是妙蛙种子。
@@ -1340,9 +1340,9 @@ harvestfestival.npc.fenn.festival.cow2=我喜欢到Jim那去给他的牛喂食�
 harvestfestival.npc.fenn.festival.harvest1=我好饿喔，什么时候我们一起去吃东西？
 harvestfestival.npc.fenn.festival.harvest2=当你站在汤锅旁边的时候就会感觉很热。我不能往里面加东西，因为我太小了。还好我爸爸把我喜欢的东西加进去了。
 harvestfestival.npc.fenn.festival.new.years.eve1=哇，今天真是太棒了。爸爸允许我可以熬夜，当然只有今天而已。
-harvestfestival.npc.fenn.festival.new.years.eve2=不知道Abi是不是也可以在今晚进行熬夜，她妈妈跟我爸爸都很严格，甚至有时候更严格。
+harvestfestival.npc.fenn.festival.new.years.eve2=不知道Abii是不是也可以在今晚进行熬夜，她妈妈跟我爸爸都很严格，甚至有时候更严格。
 harvestfestival.npc.fenn.festival.new.years1=我昨晚熬夜的时候，看到了流星。我趁机许了新年的愿望，不过我不会告诉你的。
-harvestfestival.npc.fenn.festival.new.years2=我真的很好奇Abi是不是也能够熬夜，她妈妈是那么的严格。
+harvestfestival.npc.fenn.festival.new.years2=我真的很好奇Abii是不是也能够熬夜，她妈妈是那么的严格。
 harvestfestival.npc.fenn.festival.sheep1=爸爸曾经说过一个故事，好像是关于狼跟羊的故事，这是什么意思啊？
 harvestfestival.npc.fenn.festival.sheep2=我看到在牧场的外围有许多的狼，当我想到狼群都喜欢吃绵羊的时候就觉得好可怕。
 harvestfestival.npc.fenn.festival.starry.night1=今晚妈妈会不会回来煮饭给爸爸吃呢？
@@ -1432,7 +1432,7 @@ harvestfestival.npc.thomas.greeting7=也许上帝对你仍有一丝悲悯。
 harvestfestival.npc.thomas.greeting8=我相信我能飞。
 harvestfestival.npc.thomas.greeting9=为什么我会跟那个老巫婆结婚，katlin。
 harvestfestival.npc.thomas.greeting10=你应该在周日的时候去看看教堂，会非常热闹的。
-harvestfestival.npc.thomas.greeting11=我非常为Abi感到骄傲，我的小公举。我觉得Cloe有很多东西需要向她学习。
+harvestfestival.npc.thomas.greeting11=我非常为Abii感到骄傲，我的小公举。我觉得Cloe有很多东西需要向她学习。
 harvestfestival.npc.thomas.greeting12=以基督之力驱除汝身之魔！
 harvestfestival.npc.thomas.gift.awesome=简直是让人开心到爆的礼物啊！太完美了。上帝爱你，孩子。
 harvestfestival.npc.thomas.gift.good=多么贵重的礼物啊，谢谢你。
@@ -1646,7 +1646,7 @@ harvestfestival.shop.general.options.chat=@闲聊
 
 #Poultry Farm
 harvestfestival.shop.poultry=养鸡场
-
+harvestfestival.shop.poultry.sign1=
 harvestfestival.shop.poultry.sign2=06:00-12:00
 harvestfestival.shop.poultry.sign3=周一至周六
 harvestfestival.shop.poultry.greeting1=鸡仔给我们提供了生活的必需品，您要点什么？
@@ -1655,7 +1655,7 @@ harvestfestival.shop.poultry.greeting3=欢迎来到叽叽叽喳喳喳喳派对�
 
 #Blacksmith
 harvestfestival.shop.blacksmith=铁匠铺
-
+harvestfestival.shop.blacksmith.sign1=
 harvestfestival.shop.blacksmith.sign2=周五至周三
 harvestfestival.shop.blacksmith.sign3=10:00-16:00
 
@@ -1686,7 +1686,7 @@ harvestfestival.shop.barn.greeting3=如果能养牛和羊，谁还想去养小�
 #Carpenter
 harvestfestival.shop.carpenter=木工小屋
 harvestfestival.shop.carpenter.sign1=09:00-17:30
-
+harvestfestival.shop.carpenter.sign2=
 harvestfestival.shop.carpenter.sign3=周日至周五
 harvestfestival.shop.carpenter.greeting1=想要盖新房子？找我准没错。
 harvestfestival.shop.carpenter.greeting2=我刚刚得到很棒的建筑图纸。
@@ -1713,7 +1713,7 @@ harvestfestival.shop.bloodmage.greeting3=在这个黑暗又神秘的夜晚，希
 #Tackle Shop
 harvestfestival.shop.baitshop=渔具商店
 harvestfestival.shop.baitshop.sign1=13:00-19:00
-
+harvestfestival.shop.baitshop.sign2=
 harvestfestival.shop.baitshop.sign3=周二至周五
 harvestfestival.shop.baitshop.greeting1=我们只是在做生意，一切建立在互惠互利的基础上。
 harvestfestival.shop.baitshop.greeting2=如果你想钓鱼，可以来我这边买把鱼竿。
@@ -2063,8 +2063,8 @@ harvestfestival.quest.meeting.johan.build=建造公园。
 harvestfestival.quest.meeting.johan.text=多美好的一天。很高兴见到你。我的名字是Johan。我通常每天都在，但我会在晚上回到我的故乡。如果你需要一桶牛奶，羊毛块或一些棕鸡蛋，我将很高兴和你交易一些牛奶瓶、纯羊毛或白蛋。
 harvestfestival.quest.meeting.johan.description=与Johan见面。
 harvestfestival.quest.meeting.abi.title=小脚丫
-harvestfestival.quest.meeting.abi.text=你好！我是Abi！！！！！好久不见 :D
-harvestfestival.quest.meeting.abi.description=和Abi打招呼
+harvestfestival.quest.meeting.abi.text=你好！我是Abii！！！！！好久不见 :D
+harvestfestival.quest.meeting.abi.description=和Abii打招呼
 harvestfestival.quest.meeting.candice.title=怪怪的Candice
 harvestfestival.quest.meeting.candice.text=我肯定能找到谁的。哎呦，你可是够可爱的。我是Candice，Jenni是这里的主人，我只是个农工罢了。很高兴见到你！你想喝一杯我最爱的饮品吗？
 harvestfestival.quest.meeting.candice.description=向Candice介绍你自己。
@@ -2154,7 +2154,7 @@ harvestfestival.quest.festival.new.years.wine=先生你好啊！我带了我家�
 harvestfestival.quest.festival.cooking.question=你准备加入烹饪节吗？
 harvestfestival.quest.festival.cooking.ready=@我准备好啦。
 harvestfestival.quest.festival.cooking.cancel=@在等我一下喔。
-
+harvestfestival.script.cooking=这是一个很棒的比赛！能够品尝到每个人所做的料理...... 嗯，最终...我还是这样做了决定.....第三名是%1$s跟所制作的%2$s. ..... .. ... . .......... .... .. .. .. .. . 第二名的人是%3$s跟他拿手的%4$s... 当然最重要的...... 毫无疑问的.... 今年的烹饪节烹饪竞赛冠军... ........就是%5$s 以及让人魂牵梦萦的%6$s菜肴。恭喜！对于今年的礼物，我们一共准备了%7$s金以及一个特殊的食谱。
 
 #Cooking Festical
 harvestfestival.quest.festival.cooking.help=欢迎来到，令人感到温暖的烹饪节。今年，我们将在%s开始举行竞赛。
@@ -2294,7 +2294,7 @@ harvestfestival.quest.festival.new.years.eve.question=你准备好开始为新�
 harvestfestival.quest.festival.new.years.eve.option1=@来吧，让我们一起为新年倒数吧。
 harvestfestival.quest.festival.new.years.eve.option2=@抱歉，让我在想想。
 harvestfestival.script.new.years.eve.intro=是时候为新年倒数了！
-harvestfestival.script.new.years.eve.5=五！！……
+harvestfestival.script.new.years.eve.5=五！！…………
 harvestfestival.script.new.years.eve.4=四！:D
 harvestfestival.script.new.years.eve.3=三！:O
 harvestfestival.script.new.years.eve.2=二！！！
@@ -2423,7 +2423,7 @@ harvestfestival.subtitle.fall=树木伐倒声
 harvestfestival.subtitle.kerching=咔————清脆的响声！
 
 #Config
-
+harvestfestival.config.tooltip=
 
 #Stats book
 harvestfestival.book.statistics=傻瓜农场
