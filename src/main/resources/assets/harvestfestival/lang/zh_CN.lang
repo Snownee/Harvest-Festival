@@ -695,10 +695,10 @@ harvestfestival.darkspawner.cow=暗黑牛
 harvestfestival.darkspawner.sheep=暗黑羊
 harvestfestival.darkspawner.chicken=暗黑鸡
 harvestfestival.darkspawner.chick=暗黑小鸡
-entity.harvestfestival:dark_cow.name=暗黑牛
-entity.harvestfestival:dark_sheep.name=暗黑羊
-entity.harvestfestival:dark_chicken.name=暗黑鸡
-entity.harvestfestival:dark_chick.name=暗黑小鸡
+entity.dark_cow.name=暗黑牛
+entity.dark_sheep.name=暗黑羊
+entity.dark_chicken.name=暗黑鸡
+entity.dark_chick.name=暗黑小鸡
 harvestfestival.darkdrop.feather=暗黑羽毛
 harvestfestival.darkdrop.leather=暗黑皮革
 
@@ -2097,8 +2097,8 @@ harvestfestival.quest.seeds.progress.complete=这个城市真的是越来发展�
 harvestfestival.quest.building.goddess.title=伟大的女神
 harvestfestival.quest.building.goddess.build=建造女神池
 harvestfestival.quest.building.goddess.description=跟女神进行交谈。
-harvestfestival.quest.tutorial.pond.please=你已经为了这个镇子的复兴作出了巨大的贡献。我真高兴看到了它的成长！我想要在这里有个永远的家。如果你能帮我建造一个的话，我就会给你一份奖励。
-harvestfestival.quest.tutorial.pond.thanks=你对这个镇子恢复的贡献大家已经无法用语言来表达感谢。对你给我建造家的事我也是。所以为了表示我的感激，我决定把这些草莓送给你。这是我的最爱！回见！
+harvestfestival.quest.building.goddess.please=你已经为了这个镇子的复兴作出了巨大的贡献。我真高兴看到了它的成长！我想要在这里有个永远的家。如果你能帮我建造一个的话，我就会给你一份奖励。
+harvestfestival.quest.building.goddess.thanks=你对这个镇子恢复的贡献大家已经无法用语言来表达感谢。对你给我建造家的事我也是。所以为了表示我的感激，我决定把这些草莓送给你。这是我的最爱！回见！
 
 ##Schedule Quests
 #Sunday Baking！
