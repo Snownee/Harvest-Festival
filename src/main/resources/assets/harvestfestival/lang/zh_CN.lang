@@ -1221,7 +1221,7 @@ harvestfestival.npc.abi.festival.chicken1=好多鸡啊！多么可爱的动物�
 harvestfestival.npc.abi.festival.chicken2=妈妈她不喜欢动物，但当她不注意的时候，我总是会去偷偷跟动物玩。妈妈看到我的头发沾到一些羽毛的时候，她真的生气极了。
 harvestfestival.npc.abi.festival.cooking1=好好玩啊。当你将食物拿在手中引诱它们时，它们便会汇聚到你的手掌上。
 harvestfestival.npc.abi.festival.cooking2=如果我很乖巧的话，Jakob会给我一个蛋糕作为建立奖励。
-harvestfestival.npc.abi.festival.cow1=哞！哞！我是一直牛！
+harvestfestival.npc.abi.festival.cow1=哞！哞！我是一只牛！
 harvestfestival.npc.abi.festival.cow2=牛好大只啊，比我还大。感觉它们一定喜欢拍拍最为鼓励。
 harvestfestival.npc.abi.festival.harvest1=恩，汤闻起来真的很好喝。
 harvestfestival.npc.abi.festival.harvest2=我可以将我的一些糖果放进汤里吗？
@@ -1853,7 +1853,7 @@ harvestfestival.quest.tutorial.chicken.complete=为了奖励你的辛苦工作�
 harvestfestival.quest.tutorial.cow.title=牧场
 harvestfestival.quest.tutorial.cow.description.talk=跟Jim进行对话。
 harvestfestival.quest.tutorial.cow.description.build=建造出牧场。
-harvestfestival.quest.tutorial.cow.description.brush=刷洗并喂食一直牛…
+harvestfestival.quest.tutorial.cow.description.brush=刷洗并喂食一只牛…
 harvestfestival.quest.tutorial.cow.description.milk=让Jim看看你的小瓶牛奶。
 harvestfestival.quest.tutorial.cow.reminder.intro=看来你已经建好饲养场了，该去找Jim谈谈了。
 harvestfestival.quest.tutorial.cow.reminder.barn=我发现你已经建好一个饲养场了，你可以学习一些关于奶牛和绵羊的知识了。
@@ -1866,7 +1866,7 @@ harvestfestival.quest.tutorial.cow.info=哦是吗？那我该教教你了。总�
 harvestfestival.quest.tutorial.cow.reminder.talk=记住我之前说的，手动喂养一次奶牛，然后用毛刷给他顺顺毛。
 harvestfestival.quest.tutorial.cow.milk=干的不错，看起来你已经知道怎么照顾你的奶牛了。奶牛每天都会给你产牛奶。拿起挤奶器右键奶牛直到你获得牛奶为止。记住，好感度越高它们能给你的牛奶也就越好越多。那么，现在去挤一些牛奶让我瞧瞧。
 harvestfestival.quest.tutorial.cow.reminder.milk=你忘了吗？我让你去从奶牛身上挤些牛奶给我。
-harvestfestival.quest.tutorial.cow.complete=你做的很不错。我有一些小建议。首先，下雨天你该让你的动物应该呆在棚里，晴天放它们出去转转。还有就是如果你想让它们生一些牛宝宝，可以来找我买些奇迹药水。给它们注射，几天之后一只牛宝宝就会诞生，同样的，它也会继承父母一半的好感度。目前要交代就这些了。欢迎下次再来。
+harvestfestival.quest.tutorial.cow.complete=你做的很不错。我有一些小建议。首先，下雨天你该让你的动物应该待在棚里，晴天放它们出去转转。还有就是如果你想让它们生一些牛宝宝，可以来找我买些奇迹药水。给它们注射，几天之后一只牛宝宝就会诞生，同样的，它也会继承父母一半的好感度。目前要交代就这些了。欢迎下次再来。
 
 #General Store Introduction
 harvestfestival.quest.tutorial.supermarket.title=多逛逛超市。
