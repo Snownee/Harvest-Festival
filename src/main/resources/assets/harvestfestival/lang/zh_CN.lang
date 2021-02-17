@@ -467,11 +467,11 @@ harvestfestival.junk.fossil=鱼化石
 harvestfestival.junk.treasure=海盗宝藏
 
 #Blocks
-harvestfestival.fishing.block.trap=渔栅
-harvestfestival.fishing.block.trap.tooltip=简单抓鱼器，放满诱饵，确保它是四面环水，然后第二天回来看看你的收获。
-harvestfestival.fishing.block.trap.baited=有饵渔栅
-harvestfestival.fishing.block.hatchery=孵卵所
-harvestfestival.fishing.block.hatchery.tooltip=放在水的表面，确保周围8个方块全是水。鱼在几天内会成倍增加。小心点当你把鱼拿出来时有机会损坏。
+harvestfestival.aquatic.trap=渔栅
+harvestfestival.aquatic.trap.tooltip=简单抓鱼器，放满诱饵，确保它是四面环水，然后第二天回来看看你的收获。
+harvestfestival.aquatic.trap.baited=有饵渔栅
+harvestfestival.floating.hatchery=孵卵所
+harvestfestival.floating.hatchery.tooltip=放在水的表面，确保周围8个方块全是水。鱼在几天内会成倍增加。小心点当你把鱼拿出来时有机会损坏。
 
 #Tools
 harvestfestival.tool.broken=[损坏]
@@ -2052,7 +2052,7 @@ harvestfestival.quest.friendship.tomas.cheaper.text=对我而言，你已经成�
 
 ## Meeting Quests
 harvestfestival.quest.meeting.jacob.title=寻找Jakob
-harvestfestival.quest.meeting.jacob.build=建造渔具商店商店。
+harvestfestival.quest.meeting.jacob.build=建造渔具商店。
 harvestfestival.quest.meeting.jacob.text=很高兴见到你啊 %4$s，我是Jakob。听说你喜欢钓鱼，我最近给我自己买了个新钓竿。我很高兴你能接受我的旧钓竿，还烦请照顾好它。这个渔具店是我开的，如果你有需要就过来看看吧。
 harvestfestival.quest.meeting.jacob.description=跟新朋友Jakob见面。
 harvestfestival.quest.meeting.katlin.title=老奶奶的朋友
