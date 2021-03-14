@@ -297,7 +297,7 @@ harvestfestival.meal.jam.apple.description=苹果酱是十分美味的。它的�
 harvestfestival.meal.jam.grape=葡萄酱
 harvestfestival.meal.jam.grape.description=每个人都想和水果三明治成为朋友。甜美又粘稠的葡萄果酱是初学者厨师与家长们在厨房烹饪的主要材料。也许，结合葡萄的副产品能使食材得到较大的改善。
 harvestfestival.meal.jam.strawberry=草莓酱
-harvestfestival.meal.jam.strawberry.description=由草莓制成的甜美而又粘滑的果酱配上一杯美酒是在好不过的事情了！
+harvestfestival.meal.jam.strawberry.description=由草莓制成的甜美而又粘滑的果酱配上一杯美酒是再好不过的事情了！
 harvestfestival.meal.marmalade=橘子酱
 harvestfestival.meal.marmalade.description=橘子酱…好吧，如果你没有那些甜美的果酱那么这或许是代替它们最好不过的方式。另外最重要的一点，不要忘了用法国最好的喷洒方式来完成这个过程。
 harvestfestival.meal.noodles.tempura=天妇罗盖浇面
@@ -325,7 +325,7 @@ harvestfestival.meal.latte.fruit.description=添加一些牛奶到你的果汁�
 harvestfestival.meal.sandwich.fruit=水果三明治
 harvestfestival.meal.sandwich.fruit.description=呃…水果…在三明治中。有益于素食饮食的搭配，或者可以和喜欢蘸水果的人一起敬酒。
 harvestfestival.meal.bread.raisin=葡萄干面包
-harvestfestival.meal.bread.raisin.description=对于一些简单的烘焙来说，葡萄干面包是在好不过的了。或许这时候可以在来一杯浓郁诱人的下午茶。
+harvestfestival.meal.bread.raisin.description=对于一些简单的烘焙来说，葡萄干面包是在好不过的了。或许这时候可以再来一杯浓郁诱人的下午茶。
 harvestfestival.meal.bun.jam=果酱面包
 harvestfestival.meal.bun.jam.description=外看是软绵绵，满是黄油的外壳，却蕴藏着大厨最爱的果酱。有四种风味，苹果、草莓、葡萄和果酱！
 harvestfestival.meal.cake=蛋糕
@@ -487,7 +487,7 @@ harvestfestival.hoe.tooltip.charge.cursed=诅咒/祝福耕种范围(3x12)
 harvestfestival.hoe.tooltip.charge.mythic=贤者耕种范围(5x18)
 harvestfestival.hoe.tooltip.charge=按住右键进行修改
 harvestfestival.hoe.tooltip.discharge=潜行 + 右击重置
-harvestfestival.hoe.basic=锄头
+harvestfestival.hoe.basic=普通锄头
 harvestfestival.hoe.copper=铜制锄头
 harvestfestival.hoe.silver=银制锄头
 harvestfestival.hoe.gold=金制锄头
@@ -506,7 +506,7 @@ harvestfestival.sickle.tooltip.charge.cursed=诅咒/祝福收割范围(9x9)
 harvestfestival.sickle.tooltip.charge.mythic=贤者收割范围(15x15)
 harvestfestival.sickle.tooltip.charge=按住右键进行修改
 harvestfestival.sickle.tooltip.discharge=潜行 + 右击重置
-harvestfestival.sickle.basic=镰刀
+harvestfestival.sickle.basic=普通镰刀
 harvestfestival.sickle.copper=铜制镰刀
 harvestfestival.sickle.silver=银制镰刀
 harvestfestival.sickle.gold=金制镰刀
@@ -517,7 +517,7 @@ harvestfestival.sickle.mythic=贤者镰刀
 
 #Watering Can
 harvestfestival.wateringcan.tooltip.dimensions=浇灌%sx%s区域
-harvestfestival.watering.can.basic=水壶
+harvestfestival.watering.can.basic=普通水壶
 harvestfestival.watering.can.copper=铜制水壶
 harvestfestival.watering.can.silver=银制水壶
 harvestfestival.watering.can.gold=金制水壶
@@ -530,7 +530,7 @@ harvestfestival.watering.can.mythic=贤者水壶
 harvestfestival.hammer.tooltip.dimensions=挖掘%sx%sx%s单位面积
 harvestfestival.hammer.tooltip.smash=摧毁%sx%s区域
 harvestfestival.hammer.tooltip.titles=(宽度，高度，深度)
-harvestfestival.hammer.basic=锤子
+harvestfestival.hammer.basic=普通锤子
 harvestfestival.hammer.copper=铜制锤子
 harvestfestival.hammer.silver=银制锤子
 harvestfestival.hammer.gold=金制锤子
@@ -543,7 +543,7 @@ harvestfestival.hammer.mythic=贤者锤子
 harvestfestival.axe.chop=砍树
 harvestfestival.axe.tooltip.sneak=潜行正常砍伐
 harvestfestival.axe.tooltip.chops=砍伐一棵树木需要%s下
-harvestfestival.axe.basic=斧头
+harvestfestival.axe.basic=普通斧头
 harvestfestival.axe.copper=铜制斧头
 harvestfestival.axe.silver=银制斧头
 harvestfestival.axe.gold=金制斧头
@@ -553,14 +553,14 @@ harvestfestival.axe.blessed=祝福斧头
 harvestfestival.axe.mythic=贤者斧头
 
 #Fishing Rod
-harvestfestival.fishing.rod.basic=鱼竿
-harvestfestival.fishing.rod.copper=铜制鱼竿
-harvestfestival.fishing.rod.silver=银制鱼竿
-harvestfestival.fishing.rod.gold=金制鱼竿
-harvestfestival.fishing.rod.mystril=秘银鱼竿
-harvestfestival.fishing.rod.cursed=诅咒鱼竿
-harvestfestival.fishing.rod.blessed=祝福鱼竿
-harvestfestival.fishing.rod.mythic=贤者鱼竿
+harvestfestival.fishing.rod.basic=普通钓鱼竿
+harvestfestival.fishing.rod.copper=铜制钓鱼竿
+harvestfestival.fishing.rod.silver=银制钓鱼竿
+harvestfestival.fishing.rod.gold=金制钓鱼竿
+harvestfestival.fishing.rod.mystril=秘银钓鱼竿
+harvestfestival.fishing.rod.cursed=诅咒钓鱼竿
+harvestfestival.fishing.rod.blessed=祝福钓鱼竿
+harvestfestival.fishing.rod.mythic=贤者钓鱼竿
 
 #Effects
 harvestfestival.effect.fatigue=疲劳
@@ -1005,7 +1005,7 @@ harvestfestival.npc.cloe.greeting7=我五岁的时候就已经读了200本书。
 harvestfestival.npc.cloe.greeting8=我不能理解为什么Abii喜欢可爱的东西，那太假了，简直能把我逼疯。
 harvestfestival.npc.cloe.greeting9=我们是如此的渺小。
 harvestfestival.npc.cloe.greeting10=拜托不要告诉任何人。我喜欢企鹅，这我知道，我知道…
-harvestfestival.npc.cloe.greeting11=我的叔叔有点奇怪…他把大部分的时间都花在办公桌上，不停的在工作，我不知道他在忙什么。我想是他之前说过的改装。也许有一天他能获得新生吧。
+harvestfestival.npc.cloe.greeting11=我的叔叔有点奇怪…他把大部分的时间都花在办公桌上，不停地在工作，我不知道他在忙什么。我想是他之前说过的改装。也许有一天他能获得新生吧。
 harvestfestival.npc.cloe.greeting12=我不敢相信我妈妈选择了红队的勇气联盟。
 harvestfestival.npc.cloe.marriage.reject=我不想结婚，这是在浪费时间。
 harvestfestival.npc.cloe.marriage.accept=我想我已经长大了，愿与你共度余生。
@@ -1149,7 +1149,7 @@ harvestfestival.npc.jenni.festival.cow1=我不喜欢在挤牛奶的时候在同�
 harvestfestival.npc.jenni.festival.cow2=Candice总是非常刻薄的将牛奶放置在冰箱中并达到一个特定的温度，以使制作奶制品得到最好的效果。
 harvestfestival.npc.jenni.festival.harvest1=这是一个短暂的、匆匆的岁月…
 harvestfestival.npc.jenni.festival.harvest2=经过油的飞溅，添加少量的洋甘菊与一些调味剂。一碗美味的汤就做好了！
-harvestfestival.npc.jenni.festival.new.years.eve1=可以用一个平面的沿来帮你折纸花，看，一折就好。它稍微锐了点，但在水里浮着的时候就不容易变形。在做我的成品纸花之前，我得先做个小的在井里测试一下。
+harvestfestival.npc.jenni.festival.new.years.eve1=可以用一个平面的沿来帮你折成纸花，看，一折就好。它稍微锐了点，但在水里浮着的时候就不容易变形。在做我的成品纸花之前，我得先在井里测试一朵较小的花。
 harvestfestival.npc.jenni.festival.new.years.eve2=我将在新年的时候将我仓库中库存的商品卖给你或者城镇中需要它们的人。以增加我的种子储量。
 harvestfestival.npc.jenni.festival.new.years1=新年快乐！
 harvestfestival.npc.jenni.festival.new.years2=我有一个想法，我试着想要开一间富含特色的食物店。中午的主食是饺子，而晚上则是牛肉火锅。并且它们都是物美价廉的！
@@ -1269,7 +1269,7 @@ harvestfestival.npc.tiberius.festival.new.years.eve1=血月这个现象很少在
 harvestfestival.npc.tiberius.festival.new.years.eve2=这是唯一我会准许我的孩子熬夜的晚上。
 harvestfestival.npc.tiberius.festival.new.years1=每一年的过去，都会听到关于日历用完，世界末日就会来临的预言。
 harvestfestival.npc.tiberius.festival.new.years2=想要在新年时间还没到就叫Fenn去睡觉，是根本不可能达成的事情。
-harvestfestival.npc.tiberius.festival.sheep1=历史变迁的轨迹中，我们不难发现绵羊的存在，不过就算在怎么说，羊毛的存在都是无庸置疑的。
+harvestfestival.npc.tiberius.festival.sheep1=历史变迁的轨迹中，我们不难发现绵羊的存在，不过就算再怎么说，羊毛的存在都是无庸置疑的。
 harvestfestival.npc.tiberius.festival.sheep2=传说有一个抓住狼人的办法，就是在满月的午夜把一只绵羊放在狼的领地前，在那边准备好一个银制的陷阱，就有机会可以抓到狼或是狼人。
 harvestfestival.npc.tiberius.festival.starry.night1=%4$s你知道吗，这个特别的节日对我来说是一个煎熬。但Fenn很享受这个家庭聚餐，他总是会问我妈妈会不会一起加入…可是她却离开了我们。
 harvestfestival.npc.tiberius.festival.starry.night2=如果可以的话，我们可以一起加入你的公园聚餐。
@@ -1538,7 +1538,7 @@ harvestfestival.npc.builder.build=别疑惑，我正在帮你盖 %s。
 harvestfestival.npc.builder.paint=我目前正在布置一些壁画，比如这张 %s。
 harvestfestival.npc.builder.decorate=正努力工作着呢，还差%s来收尾！
 harvestfestival.npc.builder.movein=别在意我，只是在帮大家搬到%s里去。
-harvestfestival.npc.builder.basement.build=我现在看起来可能像疯了一样，但是别怕，只不过我在正在建造 %s 的地下室。
+harvestfestival.npc.builder.basement.build=我现在看起来可能像疯了一样，但是别怕，只不过我正在建造 %s 的地下室。
 harvestfestival.npc.builder.basement.paint=我正在把壁画挂到 %s 的地下室里。
 harvestfestival.npc.builder.basement.decorate=等我插完火把 %s 就建完啦。
 harvestfestival.npc.builder.basement.movein=别在意我，只是在帮大家搬到%s里去。
@@ -1627,8 +1627,8 @@ harvestfestival.npc.girafi.festival.starry.night2=在丹麦的冬天，很难有
 # a-z A-Z 0-9 , . ' é
 
 #General
-harvestfestival.shop.outof.true=淘金？请过一会在来吧！
-harvestfestival.shop.outof.false=库存不足，请稍后在来吧！
+harvestfestival.shop.outof.true=淘金？请过一会再来吧！
+harvestfestival.shop.outof.false=库存不足，请稍后再来吧！
 harvestfestival.shop.free=免费！
 
 #General Store
@@ -1716,8 +1716,8 @@ harvestfestival.shop.baitshop.sign1=13:00-19:00
 harvestfestival.shop.baitshop.sign2=
 harvestfestival.shop.baitshop.sign3=周二至周五
 harvestfestival.shop.baitshop.greeting1=我们只是在做生意，一切建立在互惠互利的基础上。
-harvestfestival.shop.baitshop.greeting2=如果你想钓鱼，可以来我这边买把鱼竿。
-harvestfestival.shop.baitshop.greeting3=如果你需要的话，我这有鱼竿出售。
+harvestfestival.shop.baitshop.greeting2=如果你想钓鱼，可以来我这边买把钓鱼竿。
+harvestfestival.shop.baitshop.greeting3=如果你需要的话，我这有钓鱼竿出售。
 
 #Trader
 harvestfestival.shop.trader=咖啡店供应
@@ -1823,7 +1823,7 @@ harvestfestival.quest.tutorial.crops.question=你知道要怎么种田吗？
 harvestfestival.quest.tutorial.crops.tutorial=@请教我怎么种！
 harvestfestival.quest.tutorial.crops.skip=@我都知道了！
 harvestfestival.quest.tutorial.crops.completed=好吧！既然你已经知道怎么做了，带上这些开始吧！
-harvestfestival.quest.tutorial.crops.start=那就让我来教你怎么做吧！耕种首先你要耕作一下土地，耕作完之后，把一些种子种在上面。记住了，你的种子需要3*3的格子大小，你还需要每天给它们浇水，否则它们就会停止生长，同时还需要注意在不同季节能够种植的作物也不同。拿起你的锄头，在农场地简单的右键就可以耕作土地了。在你使用水壶浇灌作物之前，记得给你的水壶打一些水。拿着这些道具，等你收获了9个白萝卜之后再回来找我。还有最后一条，如果你想加快收获的话，你可以通过睡眠来度过一天，作物每天都在生长，所以这是获得收获的最快的方法了！
+harvestfestival.quest.tutorial.crops.start=那就让我来教你怎么做吧！耕种首先你要耕作一下土地，耕作完之后，把一些种子种在上面。记住了，你的种子需要3*3的格子大小，你还需要每天给它们浇水，否则它们就会停止生长，同时还需要注意在不同季节能够种植的作物也不同。拿起你的锄头，在农场地简单地右键就可以耕作土地了。在你使用水壶浇灌作物之前，记得给你的水壶打一些水。拿着这些道具，等你收获了9个白萝卜之后再回来找我。还有最后一条，如果你想加快收获的话，你可以通过睡眠来度过一天，作物每天都在生长，所以这是获得收获的最快的方法了！
 harvestfestival.quest.tutorial.crops.reminder.turnips=嘿怎么了，看起来你还没有获得9个白萝卜。如果你粗心丢掉了你的锄头的话，带给我一个石锄，我很乐意再给你一个新的。如果你需要水壶的话，可以用桶来和我交换。还有如果你还需要白萝卜种子的花，给我5朵小花就可以了！
 harvestfestival.quest.tutorial.crops.thanks.flowers=这些花真好看，拿着这些白萝卜种子吧，作为给我这些花的谢礼。
 harvestfestival.quest.tutorial.crops.thanks.hoe=太好了，拿着这个锄头吧。
@@ -1959,7 +1959,7 @@ harvestfestival.quest.trade.seeds.complete.yes1=谢谢你的花儿，这里是�
 harvestfestival.quest.trade.seeds.complete.yes2=你给我的花儿真不错，这些是你的种子。拿去吧！
 harvestfestival.quest.trade.seeds.complete.yes3=这些花真是太棒了，这是给你的种子。
 harvestfestival.quest.trade.seeds.complete.no=不好意思，这个季节我实在没有种子可以和你交换。
-harvestfestival.quest.trade.seeds.return=啊，真是抱歉。我现在没有种子了。请过%s天在过来与我进行交易吧。
+harvestfestival.quest.trade.seeds.return=啊，真是抱歉。我现在没有种子了。请过%s天再过来与我进行交易吧。
 
 # Jade Tools Trades
 harvestfestival.quest.trade.tools.hoe=谢谢你的锄头！来拿着我这把。
@@ -2028,7 +2028,7 @@ harvestfestival.quest.friendship.yulif.sprinkler.item=你是我的好朋友。�
 harvestfestival.quest.friendship.jacob.hatchery.text=为了让鱼儿幸福，我想要弄点货物来看看。
 harvestfestival.quest.friendship.jacob.hatchery.item=要让一个渔夫高兴，我这里有个多余的孵卵场你可以给你用用。对她好点。
 harvestfestival.quest.friendship.tiberius.dark.text=我信任你。周三周六晚上来拜访我吧。我想要买点东西…
-harvestfestival.quest.friendship.goddess.strawberry.text=亲爱的，我们关系还不错，所以我会让你了解草莓的秘密！Jenni现在应该在这个小镇在出售草莓，它们是春季作物，所以你可能需要等待。
+harvestfestival.quest.friendship.goddess.strawberry.text=亲爱的，我们关系还不错，所以我会让你了解草莓的秘密！Jenni现在应该在这个小镇出售草莓，它们是春季作物，所以你可能需要等待。
 harvestfestival.quest.friendship.jade.flowers.text=你好哇，%4$s，很高兴见到你，我有些好消息要告诉你，我要开一个花店了！但我没货源啊！你会帮我的吧，只要我付得起，你来多少我要多少。
 harvestfestival.quest.friendship.johan.vanilla.text=嗨！我想买你一些动物产品。但我只能在早上6点到早上10点间支付。记清楚哦。
 harvestfestival.quest.friendship.danieru.notes.text=能成为朋友真的是太好了，我有一些关于诅咒工具的小道消息要告诉你。来，要记得记到你的笔记本上。
@@ -2114,7 +2114,7 @@ harvestfestival.quest.collect.crops.complete2=真得很感谢你，年轻人。�
 harvestfestival.quest.collect.crops.complete3=这是家常的食材给你，谢谢你帮我拿来我需要的食材。
 #Slaying Mine
 ## Help Wanted Quests
-harvestfestival.quest.none=没有任何任务可以接取\n\n明天在来看看吧。
+harvestfestival.quest.none=没有任何任务可以接取\n\n明天再来看看吧。
 harvestfestival.quest.slay.title=抨击黑暗，追求光明！
 harvestfestival.quest.slay.desc=击杀 %1$s %2$s。
 harvestfestival.quest.slay.talk=跟Brandon进行交谈。
@@ -2153,7 +2153,7 @@ harvestfestival.quest.festival.new.years.wine=先生你好啊！我带了我家�
 #Cooking Festival
 harvestfestival.quest.festival.cooking.question=你准备加入烹饪节吗？
 harvestfestival.quest.festival.cooking.ready=@我准备好啦。
-harvestfestival.quest.festival.cooking.cancel=@在等我一下喔。
+harvestfestival.quest.festival.cooking.cancel=@再等我一下喔。
 harvestfestival.script.cooking=这是一个很棒的比赛！能够品尝到每个人所做的料理...... 嗯，最终...我还是这样做了决定.....第三名是%1$s跟所制作的%2$s. ..... .. ... . .......... .... .. .. .. .. . 第二名的人是%3$s跟他拿手的%4$s... 当然最重要的...... 毫无疑问的.... 今年的烹饪节烹饪竞赛冠军... ........就是%5$s 以及让人魂牵梦萦的%6$s菜肴。恭喜！对于今年的礼物，我们一共准备了%7$s金以及一个特殊的食谱。
 
 #Cooking Festical
@@ -2204,7 +2204,7 @@ harvestfestival.quest.festival.cow.explain=只要将你的一头奶牛带来于�
 harvestfestival.quest.festival.cow.none=这个摊位上没有奶牛，请选择放置一只进去！
 harvestfestival.quest.festival.cow.select=请你选择一只要进行参赛的奶牛！
 harvestfestival.quest.festival.cow.selected=好的，我现在要开始进行评选。另外，在我进行评选的时候。请不要挡住我的路喔。这会使评选速度放慢。
-harvestfestival.quest.festival.cow.judging=有什么事情吗？抱歉，请等一下。我正在忙与评选。
+harvestfestival.quest.festival.cow.judging=有什么事情吗？抱歉，请等一下。我正在忙于评选。
 harvestfestival.quest.festival.cow.nostalls=没有任何一只奶牛来参加比赛！
 
 harvestfestival.script.cow.judge=让我来看看%1$s带给我的感觉，好的%2$s…
@@ -2292,7 +2292,7 @@ harvestfestival.script.chicken.finish=我觉得是这样的。我已经把所有
 harvestfestival.quest.festival.new.years.eve.start=新的一年即将到来，你是否愿意与我们一起狂欢到天亮？
 harvestfestival.quest.festival.new.years.eve.question=你准备好开始为新年倒数了吗？
 harvestfestival.quest.festival.new.years.eve.option1=@来吧，让我们一起为新年倒数吧。
-harvestfestival.quest.festival.new.years.eve.option2=@抱歉，让我在想想。
+harvestfestival.quest.festival.new.years.eve.option2=@抱歉，让我再想想。
 harvestfestival.script.new.years.eve.intro=是时候为新年倒数了！
 harvestfestival.script.new.years.eve.5=五！！…………
 harvestfestival.script.new.years.eve.4=四！:D
@@ -2508,7 +2508,7 @@ harvestfestival.note.trees.description=与其他作物不同的是，水果树�
 
 #Secret Notes
 harvestfestival.note.secret.cursed.title=诅咒工具的秘密？
-harvestfestival.note.secret.cursed.description=相传有这么一个说法，在冬季的采矿场20至80层中，以9的倍数作为结尾的层数有概率可以找到它们。\n\n但这个传说并没有把后面那部分全部说出来。总之，诅咒工具都有各自的认知，它们不会被随意捡起。必须拥有祝福工具的人才能获得到它。
+harvestfestival.note.secret.cursed.description=相传有这么一个说法，在冬季的采矿场20至80层中，以数字“9”作为结尾的层数有概率可以找到它们。\n\n但这个传说并没有把后面那部分全部说出来。总之，诅咒工具都有各自的认知，它们不会被随意捡起。必须拥有祝福工具的人才能获得到它。
 harvestfestival.note.secret.chickens.title=增加鸡蛋生产的秘密笔记
 harvestfestival.note.secret.chickens.description=亲爱的日记，我最近发现了一种方法可以让我的母鸡每天产出更多的鸡蛋。这一切都来自于你喂了多少的点心给它们。我已经发现这个神秘的规律是5个通用点心跟26只鸡用点心，每次只要喂食它们这个数量，它们每天就会额外多生产一颗蛋。不过最多只能生产5颗蛋，请不要告诉他人喔！你的Ashlee。
 harvestfestival.note.secret.livestock.title=牲畜产出提高
