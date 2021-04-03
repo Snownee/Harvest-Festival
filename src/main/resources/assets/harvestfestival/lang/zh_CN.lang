@@ -2064,7 +2064,7 @@ harvestfestival.quest.meeting.johan.text=多美好的一天。很高兴见到你
 harvestfestival.quest.meeting.johan.description=与Johan见面。
 harvestfestival.quest.meeting.abi.title=小脚丫
 harvestfestival.quest.meeting.abi.text=你好！我是Abii！！！！！好久不见 :D
-harvestfestival.quest.meeting.abi.description=和Abii打招呼
+harvestfestival.quest.meeting.abi.description=和Abii打招呼。
 harvestfestival.quest.meeting.candice.title=怪怪的Candice
 harvestfestival.quest.meeting.candice.text=我肯定能找到谁的。哎呦，你可是够可爱的。我是Candice，Jenni是这里的主人，我只是个农工罢了。很高兴见到你！你想喝一杯我最爱的饮品吗？
 harvestfestival.quest.meeting.candice.description=向Candice介绍你自己。
@@ -2107,8 +2107,8 @@ harvestfestival.quest.schedule.katlin.baking.cake=年轻人，今天真是不错
 ## Help Wanted Quests
 #Crop Collecting
 harvestfestival.quest.collect.crops.title=缺少食材
-harvestfestival.quest.collect.crops.desc=把%1$s个%2$s带给Katlin。
-harvestfestival.quest.collect.crops.task=我正在找一些我想要烹饪的食材。请给我拿来%1$s个%2$s好吗？\n- Katlin\n\n- 免费餐点\n- Katlin会很高兴的。
+harvestfestival.quest.collect.crops.desc=带给Katlin%1$s个%2$s。
+harvestfestival.quest.collect.crops.task=我正在找一些我想要烹饪的食材。请给我带来%1$s个%2$s好吗？\n- Katlin\n\n- 免费餐点\n- Katlin会很高兴的。
 harvestfestival.quest.collect.crops.complete1=年轻人谢谢你。这些能够做出完美的食物。这是答应你的食物，快趁热吃吧。
 harvestfestival.quest.collect.crops.complete2=真得很感谢你，年轻人。我很乐意跟你分享我烹饪出来的餐点。
 harvestfestival.quest.collect.crops.complete3=这是家常的食材给你，谢谢你帮我拿来我需要的食材。
@@ -2124,20 +2124,20 @@ harvestfestival.quest.slay.complete2=谢谢你清除了这么多矿坑中的怪�
 harvestfestival.quest.slay.complete3=谢谢你清了这些生物，这是你的奖励。
 #Fish Fillet
 harvestfestival.quest.collect.fish.title=鱼片
-harvestfestival.quest.collect.fish.desc=带%1$s条%2$s给Jakob。
+harvestfestival.quest.collect.fish.desc=带给Jakob%1$s条%2$s。
 harvestfestival.quest.collect.fish.task=%2$s的生长越来越没办法控制了。我想应该抓%1$s条来减少它们的生长。抓了带来找我吧。\n- Jakob\n\n- %3$s金报酬\n- Jakob将会很开心。
 harvestfestival.quest.collect.fish.complete1=谢啦。希望这样可以让这地区的其他鱼都能有数量成长的机会。
 harvestfestival.quest.collect.fish.complete2=做得好。我们为了其他鱼的发展必须降低这些鱼的一些数量。
 harvestfestival.quest.collect.fish.complete3=希望我给你的奖赏不会让你觉得做这些减少鱼支数量的辛苦工作是不值得的。
 #Carpenter's Collection
 harvestfestival.quest.collect.materials.title=木匠的收藏
-harvestfestival.quest.collect.materials.desc=带%1$s个%2$s给Yulif
+harvestfestival.quest.collect.materials.desc=带给Yulif%1$s个%2$s。
 harvestfestival.quest.collect.materials.wood=树木
 harvestfestival.quest.collect.materials.stone=石头
 harvestfestival.quest.collect.materials.axe=铜制斧头
-harvestfestival.quest.collect.materials.pick=铜制锤
+harvestfestival.quest.collect.materials.pick=铜制锤子
 harvestfestival.quest.collect.materials.axe.silver=银制斧头
-harvestfestival.quest.collect.materials.pick.silver=银制锤
+harvestfestival.quest.collect.materials.pick.silver=银制锤子
 harvestfestival.quest.collect.materials.task=我正试着帮朋友设计一座建筑物，但还是缺少%2$s，大概%1$s个。你能帮忙吗？\n- Yulif\n\n- %4$s金报酬\n- %3$s\n- Yulif将会很感激。
 harvestfestival.quest.collect.materials.complete1=谢啦。当我开始建筑这个建筑物的时候，一定很棒。
 harvestfestival.quest.collect.materials.complete2=你的工作帮了很大的忙，这个建筑物的完工时间被大大缩短了。
