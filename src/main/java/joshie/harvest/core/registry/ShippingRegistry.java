@@ -3,6 +3,7 @@ package joshie.harvest.core.registry;
 import javax.annotation.Nonnull;
 import joshie.harvest.api.core.IShippingRegistry;
 import joshie.harvest.api.core.Ore;
+import joshie.harvest.cooking.item.ItemMeal;
 import joshie.harvest.core.util.annotations.HFApiImplementation;
 import joshie.harvest.core.util.holders.HolderRegistry;
 import net.minecraft.item.ItemStack;
@@ -35,6 +36,10 @@ public class ShippingRegistry implements IShippingRegistry {
 		//Per item override
 		if (stack.hasTagCompound() && stack.getTagCompound().hasKey(SELL_VALUE)) {
 			return stack.getTagCompound().getLong(SELL_VALUE);
+		}
+
+		if (stack.getItem() instanceof ItemMeal) {
+			return ((ItemMeal) stack.getItem()).getSellValue(stack);
 		}
 
 		//Return the registry value first, so we can override

@@ -226,13 +226,26 @@ public class ItemMeal extends ItemHFFoodEnum<ItemMeal, Meal> {
 	@Override
 	@SuppressWarnings("ConstantConditions")
 	public int getHealAmount(@Nonnull ItemStack stack) {
-		return stack.hasTagCompound() ? stack.getTagCompound().getInteger(RecipeBuilder.FOOD_LEVEL) : 0;
+		if (stack.hasTagCompound() && stack.getTagCompound().hasKey(RecipeBuilder.FOOD_LEVEL)) {
+			return stack.getTagCompound().getInteger(RecipeBuilder.FOOD_LEVEL);
+		}
+		Recipe recipe = getRecipeFromMeal(getEnumFromStack(stack));
+		return recipe != null ? recipe.getHunger() : 0;
 	}
 
 	@Override
 	@SuppressWarnings("ConstantConditions")
 	public float getSaturationModifier(@Nonnull ItemStack stack) {
-		return stack.hasTagCompound() ? stack.getTagCompound().getFloat(RecipeBuilder.SATURATION_LEVEL) : 0;
+		if (stack.hasTagCompound() && stack.getTagCompound().hasKey(RecipeBuilder.SATURATION_LEVEL)) {
+			return stack.getTagCompound().getFloat(RecipeBuilder.SATURATION_LEVEL);
+		}
+		Recipe recipe = getRecipeFromMeal(getEnumFromStack(stack));
+		return recipe != null ? recipe.getSaturation() : 0;
+	}
+
+	public long getSellValue(ItemStack stack) {
+		Recipe recipe = getRecipeFromMeal(getEnumFromStack(stack));
+		return recipe == null ? 0L : recipe.getCost();
 	}
 
 	@Override
@@ -240,18 +253,16 @@ public class ItemMeal extends ItemHFFoodEnum<ItemMeal, Meal> {
 	@SuppressWarnings("ConstantConditions")
 	public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
 		if (HFCore.DEBUG_MODE && flagIn.isAdvanced()) {
-			if (stack.hasTagCompound()) {
-				tooltip.add(TextHelper.translate("meal.hunger") + " : " + stack.getTagCompound().getInteger(RecipeBuilder.FOOD_LEVEL));
-				tooltip.add(TextHelper.translate("meal.sat") + " : " + stack.getTagCompound().getFloat(RecipeBuilder.SATURATION_LEVEL));
-				tooltip.add(TextHelper.translate("meal.sell") + " : " + stack.getTagCompound().getLong(ShippingRegistry.SELL_VALUE));
-			}
+			tooltip.add(TextHelper.translate("meal.hunger") + " : " + getHealAmount(stack));
+			tooltip.add(TextHelper.translate("meal.sat") + " : " + getSaturationModifier(stack));
+			tooltip.add(TextHelper.translate("meal.sell") + " : " + ShippingRegistry.INSTANCE.getSellValue(stack));
 		}
 	}
 
 	@Override
 	@Nonnull
 	public ItemStack onItemUseFinish(@Nonnull ItemStack stack, @Nonnull World world, EntityLivingBase entityLiving) {
-		if (stack.hasTagCompound() && entityLiving instanceof EntityPlayer) {
+		if (entityLiving instanceof EntityPlayer && getHealAmount(stack) > 0) {
 			EntityPlayer player = (EntityPlayer) entityLiving;
 			player.getFoodStats().addStats(this, stack);
 			if (!player.isCreative()) {
@@ -272,23 +283,15 @@ public class ItemMeal extends ItemHFFoodEnum<ItemMeal, Meal> {
 
 	@Override
 	public int getMaxItemUseDuration(@Nonnull ItemStack stack) {
-		if (stack.hasTagCompound()) {
-			Recipe recipe = getRecipeFromMeal(getEnumFromStack(stack));
-			return recipe == null ? 32 : recipe.getEatTimer();
-		} else {
-			return 32;
-		}
+		Recipe recipe = getRecipeFromMeal(getEnumFromStack(stack));
+		return recipe == null ? 32 : recipe.getEatTimer();
 	}
 
 	@Override
 	@Nonnull
 	public EnumAction getItemUseAction(@Nonnull ItemStack stack) {
-		if (stack.hasTagCompound()) {
-			Recipe recipe = getRecipeFromMeal(getEnumFromStack(stack));
-			return recipe == null ? EnumAction.NONE : recipe.getAction();
-		} else {
-			return EnumAction.NONE;
-		}
+		Recipe recipe = getRecipeFromMeal(getEnumFromStack(stack));
+		return recipe == null ? EnumAction.EAT : recipe.getAction();
 	}
 
 	@Override

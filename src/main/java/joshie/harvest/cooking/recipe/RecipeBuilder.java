@@ -28,7 +28,7 @@ public class RecipeBuilder {
 	private int hunger = 0;
 	private float saturation;
 	private int stackSize;
-	private long cost;
+//	private long cost;
 
 	public NonNullList<ItemStack> build(Recipe recipe, List<IngredientStack> ingredients) {
 		//We can and will end up with recipes in the required and optional list
@@ -52,17 +52,16 @@ public class RecipeBuilder {
 		//To add to the last item in our stack
 		calculateStackSizeBasedOnRequiredListAndRemainingItems(recipe.getRequired());
 		calculateActualHungerAndSaturationValues(recipe);
-		calculateCostsBasedOnEverything(recipe);
 		//We now know exactly what the stack size will be, as well as exactly how many items we have left!
 		//We know this, as it will be the items remaining in the required
 		//If we have stuff to calculate then do so, otherwise return everything as is
 		if (required.isEmpty() || !recipe.supportsNBTData()) {
-			return build(recipe.getStack(), recipe.supportsNBTData());
+			return build(recipe.getStack(), recipe.supportsNBTData(), recipe.getCost());
 		} else {
 			//Now we need to work out the additional stats for the last bit of food
 			NonNullList<ItemStack> ret = NonNullList.create();
 			if (stackSize > 1) {
-				ret.add(setFoodStats(StackHelper.toStack(recipe.getStack(), stackSize - 1), hunger, saturation, cost));
+				ret.add(setFoodStats(StackHelper.toStack(recipe.getStack(), stackSize - 1), hunger, saturation, recipe.getCost()));
 			}
 			//Added the basic recipes, now we need to work out the final oddball stack to add
 			float multiplier = 1F;
@@ -73,12 +72,12 @@ public class RecipeBuilder {
 			//Now that we calulcated the multiplier let's adjust the values
 			hunger = (int) Math.floor((double) hunger * multiplier);
 			saturation = saturation * multiplier;
-			ret.add(setFoodStats(recipe.getStack(), hunger, saturation, cost));
+			ret.add(setFoodStats(recipe.getStack(), hunger, saturation, recipe.getCost()));
 			return ret;
 		}
 	}
 
-	private NonNullList<ItemStack> build(ItemStack basicStack, boolean supportsNBTData) {
+	private NonNullList<ItemStack> build(ItemStack basicStack, boolean supportsNBTData, long cost) {
 		if (!supportsNBTData) {
 			return NonNullList.withSize(1, StackHelper.toStack(basicStack, basicStack.getCount() * stackSize));
 		} else {
@@ -99,7 +98,7 @@ public class RecipeBuilder {
 		return stack;
 	}
 
-	private void calculateCostsBasedOnEverything(Recipe recipe) {
+	public static long calculateCostsBasedOnEverything(Recipe recipe) {
 		long sell = 0L;
 		for (IngredientStack stack : recipe.getRequired()) {
 			if (stack.getIngredient() == HFIngredients.BREAD) {
@@ -120,7 +119,7 @@ public class RecipeBuilder {
 			}
 		}
 
-		this.cost = (long) (sell * HFCooking.COOKING_SELL_MODIFIER);
+		return (long) (sell * HFCooking.COOKING_SELL_MODIFIER);
 	}
 
 	private void calculateActualHungerAndSaturationValues(Recipe recipe) {

@@ -8,6 +8,7 @@ import java.util.Map;
 
 import javax.annotation.Nonnull;
 import joshie.harvest.api.core.HFRegistry;
+import joshie.harvest.cooking.recipe.RecipeBuilder;
 import net.minecraft.init.Items;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.ItemStack;
@@ -28,6 +29,7 @@ public class Recipe extends HFRegistry<Recipe> {
 	private int eatTimer;
 	private int maximumOptional;
 	private boolean isLearntByDefault;
+	private long cost;
 
 	public Recipe(ResourceLocation resource, Utensil utensil, IngredientStack... required) {
 		super(resource);
@@ -36,6 +38,7 @@ public class Recipe extends HFRegistry<Recipe> {
 		this.eatTimer = 24;
 		this.maximumOptional = 20;
 		Collections.addAll(this.required, required);
+		cost = RecipeBuilder.calculateCostsBasedOnEverything(this);
 	}
 
 	public void setDefault() {
@@ -119,6 +122,10 @@ public class Recipe extends HFRegistry<Recipe> {
 
 	public float getSaturation() {
 		return saturation;
+	}
+
+	public long getCost() {
+		return cost;
 	}
 
 	public EnumAction getAction() {
