@@ -504,11 +504,9 @@ public class MiningChunk implements IChunkGenerator {
 						int x2 = clamp(x);
 						int z2 = clamp(z);
 
-						for (EnumFacing enumfacing : EnumFacing.values()) {
-							if (enumfacing == EnumFacing.DOWN || enumfacing == EnumFacing.UP) {
-								continue;
-							}
-							BlockPos pos = new BlockPos(x, chunkY, z).offset(enumfacing);
+						BlockPos blockPos = new BlockPos(x, chunkY, z);
+						for (EnumFacing enumfacing : EnumFacing.HORIZONTALS) {
+							BlockPos pos = blockPos.offset(enumfacing);
 							int x3 = clamp(pos.getX());
 							int z3 = clamp(pos.getZ());
 

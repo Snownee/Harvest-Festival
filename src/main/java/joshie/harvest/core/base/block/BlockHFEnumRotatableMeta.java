@@ -58,14 +58,14 @@ public abstract class BlockHFEnumRotatableMeta<B extends BlockHFEnumRotatableMet
 	}
 
 	public EnumFacing getFacingFromMeta(int meta) {
-		return EnumFacing.values()[2 + ((meta / values.length) % 4)];
+		return EnumFacing.getHorizontal(meta);
 	}
 
 	@Override
 	public int getMetaFromState(IBlockState state) {
-		int enumValue = (state.getValue(property)).ordinal();
-		int faceValue = (state.getValue(FACING)).ordinal();
-		return enumValue + (values.length * enumValue) + faceValue;
+		int enumValue = state.getValue(property).ordinal();
+		int faceValue = state.getValue(FACING).getHorizontalIndex();
+		return 4 * enumValue + faceValue;
 	}
 
 	@Override
