@@ -134,7 +134,7 @@ public class AnimalStatsHF implements AnimalStats<NBTTagCompound> {
 		if (treated && productsPerDay < 5) {
 			int requiredGeneric = type.getGenericTreatCount();
 			int requiredType = type.getTypeTreatCount();
-			if (genericTreats >= requiredGeneric && requiredType >= typeTreats) {
+			if (genericTreats >= requiredGeneric && typeTreats >= requiredType) {
 				genericTreats -= requiredGeneric;
 				typeTreats -= requiredType;
 				productsPerDay++;
