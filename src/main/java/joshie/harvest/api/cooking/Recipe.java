@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 import javax.annotation.Nonnull;
+import joshie.harvest.HarvestFestival;
 import joshie.harvest.api.core.HFRegistry;
 import joshie.harvest.cooking.recipe.RecipeBuilder;
 import net.minecraft.init.Items;
@@ -38,7 +39,11 @@ public class Recipe extends HFRegistry<Recipe> {
 		this.eatTimer = 24;
 		this.maximumOptional = 20;
 		Collections.addAll(this.required, required);
+	}
+
+	public void updateCost() {
 		cost = RecipeBuilder.calculateCostsBasedOnEverything(this);
+//		HarvestFestival.LOGGER.info("{} has been recalculated. cost: {}", getResource().toString(), cost);
 	}
 
 	public void setDefault() {

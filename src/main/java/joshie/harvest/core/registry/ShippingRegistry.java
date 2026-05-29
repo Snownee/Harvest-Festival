@@ -39,7 +39,10 @@ public class ShippingRegistry implements IShippingRegistry {
 		}
 
 		if (stack.getItem() instanceof ItemMeal) {
-			return ((ItemMeal) stack.getItem()).getSellValue(stack);
+			long sellValue = ((ItemMeal) stack.getItem()).getSellValue(stack);
+			if (sellValue > 0) {
+				return sellValue;
+			}
 		}
 
 		//Return the registry value first, so we can override

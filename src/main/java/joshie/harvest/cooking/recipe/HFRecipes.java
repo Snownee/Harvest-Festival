@@ -41,6 +41,12 @@ public class HFRecipes {
 		HFApi.shipping.registerSellable(HFCooking.MEAL.getStackFromEnum(Meal.TEMPURA), 168L);
 	}
 
+	public static void complete() {
+		for (Recipe recipe : Recipe.REGISTRY.values()) {
+			recipe.updateCost();
+		}
+	}
+
 	private static void addFryingPanRecipes() {
 		//Added in 0.5+
 		RecipeHelper.addFryingPanRecipe(
