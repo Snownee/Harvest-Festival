@@ -12,6 +12,7 @@ import joshie.harvest.quests.Quests;
 import joshie.harvest.quests.base.QuestFriendship;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.NonNullList;
 
 @HFQuest("friendship.fenn.salad")
@@ -31,6 +32,7 @@ public class QuestFenn5KSalad extends QuestFriendship {
 		NonNullList<ItemStack> stacks = NonNullList.create();
 		//Salad
 		ItemStack stack = HFCooking.MEAL.getCreativeStack(Meal.SALAD);
+		stack.setTagCompound(new NBTTagCompound());
 		stack.getTagCompound().setLong(ShippingRegistry.SELL_VALUE, 0L);
 		stacks.add(stack);
 

@@ -13,6 +13,7 @@ import joshie.harvest.quests.base.QuestFriendship;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.NonNullList;
 
 @HFQuest("friendship.abii.cookies")
@@ -32,6 +33,7 @@ public class QuestAbii5KFreeCookies extends QuestFriendship {
 		NonNullList<ItemStack> stacks = NonNullList.create();
 		//Normal Cookies
 		ItemStack stack = HFCooking.MEAL.getCreativeStack(Meal.COOKIES);
+		stack.setTagCompound(new NBTTagCompound());
 		stack.getTagCompound().setLong(ShippingRegistry.SELL_VALUE, 0L);
 		stacks.add(stack);
 
