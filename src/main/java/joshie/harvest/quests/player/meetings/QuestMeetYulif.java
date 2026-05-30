@@ -18,6 +18,8 @@ import joshie.harvest.knowledge.HFNotes;
 import joshie.harvest.npcs.HFNPCs;
 import joshie.harvest.quests.HFQuests;
 import joshie.harvest.quests.Quests;
+import joshie.harvest.town.TownHelper;
+import joshie.harvest.town.data.TownData;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
@@ -156,6 +158,10 @@ public class QuestMeetYulif extends Quest {
 		NPC npc = entity.getNPC();
 		if (quest_stage == WELCOME && npc == HFNPCs.GODDESS) {
 			increaseStage(player);
+			TownData town = TownHelper.getClosestTownToBlockPos(player.world, player.getPosition(), false);
+			if (town.hasBuilding(HFBuildings.CARPENTER) && !HFBuildings.CARPENTER.canHaveMultiple()) {
+				increaseStage(player);
+			}
 		} else if (quest_stage == LOGS && npc == HFNPCs.GODDESS) {
 			if (InventoryHelper.takeItemsIfHeld(player, InventoryHelper.ORE_DICTIONARY, "logWood", HFQuests.LOGS_CARPENTER) != null) {
 				HFTrackers.getPlayerTrackerFromPlayer(player).getTracking().learnNote(HFNotes.BLUEPRINTS);
