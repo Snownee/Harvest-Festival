@@ -87,7 +87,7 @@
 					"functions": [
 						{
 							"function": "hf_set_enum",
-							"enum": "angel"
+							"enum": "catfish"
 						},
 						{
 							"function": "hf_set_weight"

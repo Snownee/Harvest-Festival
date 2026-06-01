@@ -72,7 +72,7 @@
 					"functions": [
 						{
 							"function": "hf_set_enum",
-							"enum": "angel"
+							"enum": "pike"
 						},
 						{
 							"function": "hf_set_weight"

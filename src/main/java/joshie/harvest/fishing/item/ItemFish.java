@@ -77,99 +77,43 @@ public class ItemFish extends ItemHFFoodEnum<ItemFish, Fish> {
 	public static final int GIANT_FISH = 4;
 
 	public enum Fish implements IStringSerializable, ISellable {
-		ANCHOVY(30L, 2D, 40D, Season.SPRING, Season.SUMMER, Season.AUTUMN, Season.WINTER), ANGEL(230, 5D, 15D, Season.SPRING), ANGLER(
-				500,
-				20D,
-				100D,
-				Season.WINTER), BASS(
-				105L,
-				35D,
-				75D,
-				Season.SPRING,
-				Season.AUTUMN), BLAASOP(365L, 34D, 110D, Season.WINTER),
-		BOWFIN(130L, 50D, 109D, Season.SPRING, Season.SUMMER, Season.AUTUMN, Season.WINTER), BUTTERFLY(
-				200L,
-				12D,
-				22D,
-				Season.SPRING,
-				Season.SUMMER), CARP(
-				60L,
-				35D,
-				105D,
-				Season.SPRING,
-				Season.SUMMER,
-				Season.AUTUMN,
-				Season.WINTER), CATFISH(120L, 100D, 250D, Season.SUMMER, Season.AUTUMN, Season.WINTER),
-		CHUB(40L, 40D, 80D, Season.SPRING, Season.SUMMER, Season.AUTUMN, Season.WINTER), CLOWN(
-				170L,
-				10D,
-				18D,
-				Season.SPRING,
-				Season.SUMMER), COD(
-				50L,
-				5D,
-				200D,
-				Season.SPRING,
-				Season.AUTUMN,
-				Season.WINTER), DAMSEL(105L, 3D, 5D, Season.SPRING, Season.SUMMER), ELECTRICRAY(
-				230L,
-				80D,
-				190D,
-				Season.AUTUMN,
-				Season.WINTER),
-		GOLD(35L, 5D, 45D, Season.SPRING, Season.SUMMER, Season.AUTUMN, Season.WINTER), HERRING(
-				85L, 14D, 46D, Season.SPRING,
-				Season.AUTUMN, Season.WINTER), KOI(
-				280L,
-				25D,
-				90D,
-				Season.SUMMER,
-				Season.WINTER), LAMPREY(100L, 13D, 100D, Season.SPRING, Season.AUTUMN, Season.WINTER), LUNGFISH(
-				200L,
-				70D,
-				150D,
-				Season.SUMMER),
-		MANTARAY(400L, 400D, 700D, Season.SPRING), MINNOW(20L, 2D, 13D, Season.SPRING, Season.SUMMER, Season.AUTUMN, Season.WINTER), PERCH(
-				65L,
-				7.5D,
-				30D,
-				Season.SPRING,
-				Season.SUMMER,
-				Season.AUTUMN,
-				Season.WINTER), PICKEREL(140L, 50D, 76D, Season.SPRING, Season.SUMMER, Season.WINTER), PIKE(
-				235L, 60D, 130D,
-				Season.SUMMER,
-				Season.WINTER),
-		PIRANHA(400L, 30D, 50D, Season.SUMMER), PUFFER(300L, 2.5D, 61D, Season.SUMMER), PUPFISH(
-				115L, 5D, 8D, Season.SPRING,
-				Season.SUMMER, Season.AUTUMN, Season.WINTER), SALMON(
-				80L,
-				60D,
-				80D,
-				Season.SPRING,
-				Season.SUMMER,
-				Season.AUTUMN,
-				Season.WINTER), SARDINE(20L, 8D, 30D, Season.SUMMER, Season.AUTUMN, Season.WINTER),
-		SIAMESE(200L, 4D, 7D, Season.SPRING, Season.WINTER), STARGAZER(140L, 25D, 40D, Season.SPRING, Season.SUMMER), STINGRAY(
-				250L, 150D, 200D,
-				Season.SPRING,
-				Season.SUMMER), TANG(
-				230L,
-				20D,
-				35D,
-				Season.SPRING,
-				Season.SUMMER), TETRA(185L, 1.5D, 4D, Season.SPRING, Season.SUMMER),
-		TROUT(80L, 25D, 90D, Season.SPRING, Season.SUMMER, Season.AUTUMN, Season.WINTER), TUNA(
-				160L,
-				40D,
-				460D,
-				Season.AUTUMN,
-				Season.WINTER), WALLEYE(
-				110L,
-				25D,
-				35D,
-				Season.SUMMER,
-				Season.AUTUMN);
+		ANCHOVY(30L, 2D, 40D, Season.SPRING, Season.SUMMER, Season.AUTUMN, Season.WINTER),
+		ANGEL(230, 5D, 15D, Season.SPRING),
+		ANGLER(500, 20D, 100D, Season.WINTER),
+		BASS(105L, 35D, 75D, Season.SPRING, Season.AUTUMN),
+		BLAASOP(365L, 34D, 110D, Season.WINTER),
+		BOWFIN(130L, 50D, 109D, Season.SPRING, Season.SUMMER, Season.AUTUMN, Season.WINTER),
+		BUTTERFLY(200L, 12D, 22D, Season.SPRING, Season.SUMMER),
+		CARP(60L, 35D, 105D, Season.SPRING, Season.SUMMER, Season.AUTUMN, Season.WINTER),
+		CATFISH(120L, 100D, 250D, Season.SUMMER, Season.AUTUMN, Season.WINTER),
+		CHUB(40L, 40D, 80D, Season.SPRING, Season.SUMMER, Season.AUTUMN, Season.WINTER),
+		CLOWN(170L, 10D, 18D, Season.SPRING, Season.SUMMER),
+		COD(50L, 5D, 200D, Season.SPRING, Season.AUTUMN, Season.WINTER),
+		DAMSEL(105L, 3D, 5D, Season.SPRING, Season.SUMMER),
+		ELECTRICRAY(230L, 80D, 190D, Season.AUTUMN, Season.WINTER),
+		GOLD(35L, 5D, 45D, Season.SPRING, Season.SUMMER, Season.AUTUMN, Season.WINTER),
+		HERRING(85L, 14D, 46D, Season.SPRING, Season.AUTUMN, Season.WINTER),
+		KOI(280L, 25D, 90D, Season.SUMMER, Season.WINTER),
+		LAMPREY(100L, 13D, 100D, Season.SPRING, Season.AUTUMN, Season.WINTER),
+		LUNGFISH(200L, 70D, 150D, Season.SUMMER),
+		MANTARAY(400L, 400D, 700D, Season.SPRING),
+		MINNOW(20L, 2D, 13D, Season.SPRING, Season.SUMMER, Season.AUTUMN, Season.WINTER),
+		PERCH(65L, 7.5D, 30D, Season.SPRING, Season.SUMMER, Season.AUTUMN, Season.WINTER),
+		PICKEREL(140L, 50D, 76D, Season.SPRING, Season.SUMMER, Season.WINTER),
+		PIKE(235L, 60D, 130D, Season.SUMMER, Season.WINTER),
+		PIRANHA(400L, 30D, 50D, Season.SUMMER),
+		PUFFER(300L, 2.5D, 61D, Season.SUMMER),
+		PUPFISH(115L, 5D, 8D, Season.SPRING, Season.SUMMER, Season.AUTUMN, Season.WINTER),
+		SALMON(80L, 60D, 80D, Season.SPRING, Season.SUMMER, Season.AUTUMN, Season.WINTER),
+		SARDINE(20L, 8D, 30D, Season.SUMMER, Season.AUTUMN, Season.WINTER),
+		SIAMESE(200L, 4D, 7D, Season.SPRING, Season.WINTER),
+		STARGAZER(140L, 25D, 40D, Season.SPRING, Season.SUMMER),
+		STINGRAY(250L, 150D, 200D, Season.SPRING, Season.SUMMER),
+		TANG(230L, 20D, 35D, Season.SPRING, Season.SUMMER),
+		TETRA(185L, 1.5D, 4D, Season.SPRING, Season.SUMMER),
+		TROUT(80L, 25D, 90D, Season.SPRING, Season.SUMMER, Season.AUTUMN, Season.WINTER),
+		TUNA(160L, 40D, 460D, Season.AUTUMN, Season.WINTER),
+		WALLEYE(110L, 25D, 35D, Season.SUMMER, Season.AUTUMN);
 
 		private final long sell;
 		private final double small;
