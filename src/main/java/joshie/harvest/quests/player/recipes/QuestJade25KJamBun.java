@@ -8,7 +8,7 @@ import joshie.harvest.npcs.HFNPCs;
 import joshie.harvest.quests.Quests;
 import joshie.harvest.quests.base.QuestRecipe;
 
-@HFQuest("recipe.jam.apple")
+@HFQuest("recipe.bun_jam")
 public class QuestJade25KJamBun extends QuestRecipe {
 	public QuestJade25KJamBun() {
 		super("bun_jam", HFNPCs.FLOWER_GIRL, 25000);

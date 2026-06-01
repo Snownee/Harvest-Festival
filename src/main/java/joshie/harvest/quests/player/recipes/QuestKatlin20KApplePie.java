@@ -8,7 +8,7 @@ import joshie.harvest.npcs.HFNPCs;
 import joshie.harvest.quests.Quests;
 import joshie.harvest.quests.base.QuestRecipe;
 
-@HFQuest("recipe.stew")
+@HFQuest("recipe.pie_apple")
 public class QuestKatlin20KApplePie extends QuestRecipe {
 	public QuestKatlin20KApplePie() {
 		super("pie_apple", HFNPCs.CAFE_GRANNY, 20000);
