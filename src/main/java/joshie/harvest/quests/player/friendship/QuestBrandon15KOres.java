@@ -30,6 +30,6 @@ public class QuestBrandon15KOres extends QuestFriendshipStore {
 	@Override
 	@Nonnull
 	protected ItemStack getRewardStack() {
-		return new ItemStack(Items.DIAMOND, 1, 3);
+		return new ItemStack(Items.DIAMOND);
 	}
 }

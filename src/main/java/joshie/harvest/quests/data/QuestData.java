@@ -93,5 +93,4 @@ public abstract class QuestData {
 		nbt.setTag("FinishedQuests", done);
 		return nbt;
 	}
-
 }

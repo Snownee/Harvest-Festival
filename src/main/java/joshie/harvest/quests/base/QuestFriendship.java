@@ -52,7 +52,8 @@ public abstract class QuestFriendship extends Quest {
 	}
 
 	protected NonNullList<ItemStack> getRewardStacks(EntityPlayer player) {
-		return !getRewardStack().isEmpty() ? NonNullList.withSize(1, getRewardStack()) : null;
+		ItemStack itemStack = getRewardStack();
+		return !itemStack.isEmpty() ? NonNullList.withSize(1, itemStack) : null;
 	}
 
 	@Nonnull

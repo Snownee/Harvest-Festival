@@ -145,6 +145,29 @@ public class QuestHelper implements IQuestHelper {
 		return all;
 	}
 
+	@Override
+	public boolean startQuest(Quest quest, EntityPlayer player, @Nullable NBTTagCompound tag) {
+		if (!player.world.isRemote) {
+			if (quest.getQuestType() == TargetType.PLAYER) {
+				return HFTrackers.getPlayerTrackerFromPlayer(player).getQuests().startQuest(quest, true, tag);
+			} else {
+				return TownHelper.getClosestTownToEntity(player, false).getQuests().startQuest(quest, true, tag);
+			}
+		}
+		return false;
+	}
+
+	@Override
+	public void revokeQuest(Quest quest, EntityPlayer player) {
+		if (!player.world.isRemote) {
+			if (quest.getQuestType() == TargetType.PLAYER) {
+				HFTrackers.getPlayerTrackerFromPlayer(player).getQuests().removeAsCurrent(player.world, quest);
+			} else {
+				TownHelper.getClosestTownToEntity(player, false).getQuests().removeAsCurrent(player.world, quest);
+			}
+		}
+	}
+
 	public static Quest getQuest(String name) {
 		try {
 			return Quest.REGISTRY.getValue(HarvestFestival.id(name));

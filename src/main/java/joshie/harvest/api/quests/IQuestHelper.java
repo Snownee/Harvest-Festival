@@ -3,8 +3,10 @@ package joshie.harvest.api.quests;
 import java.util.List;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
 
 public interface IQuestHelper {
 	/**
@@ -80,4 +82,8 @@ public interface IQuestHelper {
 	 * @param player the player
 	 */
 	List<Quest> getCurrentQuests(EntityPlayer player);
+
+	boolean startQuest(Quest quest, EntityPlayer player, @Nullable NBTTagCompound tag);
+
+	void revokeQuest(Quest quest, EntityPlayer player);
 }

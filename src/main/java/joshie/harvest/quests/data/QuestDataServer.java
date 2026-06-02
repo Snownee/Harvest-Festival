@@ -86,8 +86,8 @@ public class QuestDataServer extends QuestData {
 	public void markCompleted(@Nonnull World world, @Nullable EntityPlayer player, Quest quest, boolean rewards) {
 		Quest localQuest = getAQuest(quest);
 		if (localQuest != null) {
-			current.remove(localQuest);
 			finish(world, player, localQuest, rewards);
+			current.remove(localQuest);
 		} else {
 			finish(world, player, quest, rewards);
 		}

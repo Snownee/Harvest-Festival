@@ -40,7 +40,11 @@ public class HarvestFestival {
 	public static HarvestFestival instance;
 
 	public static ResourceLocation id(String path) {
-		return new ResourceLocation(HFModInfo.MODID, path);
+		if (path.contains(":")) {
+			return new ResourceLocation(path);
+		} else {
+			return new ResourceLocation(HFModInfo.MODID, path);
+		}
 	}
 
 	@EventHandler

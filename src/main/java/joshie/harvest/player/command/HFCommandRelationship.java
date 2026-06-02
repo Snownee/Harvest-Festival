@@ -1,6 +1,10 @@
 package joshie.harvest.player.command;
 
+import java.util.List;
+
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+import joshie.harvest.HarvestFestival;
 import joshie.harvest.api.npc.NPC;
 import joshie.harvest.core.HFTrackers;
 import joshie.harvest.core.commands.CommandManager.CommandLevel;
@@ -13,7 +17,7 @@ import net.minecraft.command.ICommandSender;
 import net.minecraft.command.WrongUsageException;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.server.MinecraftServer;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.BlockPos;
 
 @HFCommand
 @SuppressWarnings("unused")
@@ -27,7 +31,7 @@ public class HFCommandRelationship extends CommandBase {
 	@Override
 	@Nonnull
 	public String getUsage(@Nonnull ICommandSender sender) {
-		return "/hf relationship [player] <npc|all> <value>";
+		return "/hf relationship [player] <npc|all|clear> <value>";
 	}
 
 	@Override
@@ -58,10 +62,7 @@ public class HFCommandRelationship extends CommandBase {
 							-relationships.getRelationship(npcz)));
 					break;
 				default:
-					if (!npc.contains(":")) {
-						npc = "harvestfestival:" + npc;
-					}
-					NPC theNPC = NPC.REGISTRY.get(new ResourceLocation(npc));
+					NPC theNPC = NPC.REGISTRY.get(HarvestFestival.id(npc));
 					if (theNPC == null) {
 						return;
 					} else {
@@ -72,5 +73,16 @@ public class HFCommandRelationship extends CommandBase {
 		} else {
 			throw new WrongUsageException(getUsage(sender));
 		}
+	}
+
+	@Override
+	public List<String> getTabCompletions(MinecraftServer server, ICommandSender sender, String[] args, @Nullable BlockPos targetPos) {
+		if (args.length == 1) {
+			return getListOfStringsMatchingLastWord(args, server.getOnlinePlayerNames());
+		} else if (args.length == 2) {
+			return getListOfStringsMatchingLastWord(args, NPC.REGISTRY.keySet());
+		}
+
+		return super.getTabCompletions(server, sender, args, targetPos);
 	}
 }

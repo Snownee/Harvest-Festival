@@ -38,11 +38,13 @@ public class QuestFenn5KSalad extends QuestFriendship {
 
 		//Pickled Cucumber
 		stack = HFCooking.MEAL.getCreativeStack(Meal.CUCUMBER_PICKLED);
+		stack.setTagCompound(new NBTTagCompound());
 		stack.getTagCompound().setLong(ShippingRegistry.SELL_VALUE, 0L);
 		stacks.add(stack);
 
 		//Boiled Spinach
 		stack = HFCooking.MEAL.getCreativeStack(Meal.SPINACH_BOILED);
+		stack.setTagCompound(new NBTTagCompound());
 		stack.getTagCompound().setLong(ShippingRegistry.SELL_VALUE, 0L);
 		stacks.add(stack);
 		return stacks;
