@@ -11,6 +11,7 @@ import joshie.harvest.quests.QuestHelper;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommandSender;
+import net.minecraft.command.SyntaxErrorException;
 import net.minecraft.command.WrongUsageException;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.server.MinecraftServer;
@@ -18,17 +19,17 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
 
 @HFCommand
-public class CommandListQuests extends CommandBase {
+public class CommandRevokeQuest extends CommandBase {
 	@Override
 	@Nonnull
 	public String getName() {
-		return "list_quests";
+		return "revoke_quest";
 	}
 
 	@Override
 	@Nonnull
 	public String getUsage(@Nonnull ICommandSender sender) {
-		return "/hf list_quests [player]";
+		return "/hf revoke_quest <quest> [player]";
 	}
 
 	@Override
@@ -41,29 +42,17 @@ public class CommandListQuests extends CommandBase {
 			@Nonnull MinecraftServer server,
 			@Nonnull ICommandSender sender,
 			@Nonnull String[] parameters) throws CommandException {
-		if (parameters.length == 0 || parameters.length == 1) {
-			EntityPlayerMP player = parameters.length == 0 ? CommandBase.getCommandSenderAsPlayer(sender) : CommandBase.getPlayer(
+		if (parameters.length == 1 || parameters.length == 2) {
+			Quest quest = QuestHelper.getQuest(parameters[0]);
+			if (quest == null) {
+				throw new SyntaxErrorException("Quest " + parameters[0] + " does not exist");
+			}
+			EntityPlayerMP player = parameters.length == 1 ? CommandBase.getCommandSenderAsPlayer(sender) : CommandBase.getPlayer(
 					server,
 					sender,
-					parameters[0]);
-			List<Quest> quests = QuestHelper.INSTANCE.getCurrentQuests(player);
-			if (quests.isEmpty()) {
-				sender.sendMessage(new TextComponentString(player.getName() + " has no current quests"));
-			} else {
-				sender.sendMessage(new TextComponentString(player.getName() + " has the following current quests:"));
-				for (Quest quest : quests) {
-					sender.sendMessage(new TextComponentString("- " + quest.getRegistryName() + ": " + quest.getStage()));
-				}
-			}
-			quests = QuestHelper.INSTANCE.getFinishedQuests(player);
-			if (quests.isEmpty()) {
-				sender.sendMessage(new TextComponentString(player.getName() + " has no finished quests"));
-			} else {
-				sender.sendMessage(new TextComponentString(player.getName() + " has the following finished quests:"));
-				for (Quest quest : quests) {
-					sender.sendMessage(new TextComponentString("- " + quest.getRegistryName()));
-				}
-			}
+					parameters[1]);
+			QuestHelper.INSTANCE.revokeQuest(quest, player);
+			sender.sendMessage(new TextComponentString("Revoked quest " + quest.getRegistryName() + " from " + player.getName()));
 		} else {
 			throw new WrongUsageException(getUsage(sender));
 		}
@@ -72,6 +61,8 @@ public class CommandListQuests extends CommandBase {
 	@Override
 	public List<String> getTabCompletions(MinecraftServer server, ICommandSender sender, String[] args, @Nullable BlockPos targetPos) {
 		if (args.length == 1) {
+			return getListOfStringsMatchingLastWord(args, Quest.REGISTRY.getKeys());
+		} else if (args.length == 2) {
 			return getListOfStringsMatchingLastWord(args, server.getOnlinePlayerNames());
 		}
 

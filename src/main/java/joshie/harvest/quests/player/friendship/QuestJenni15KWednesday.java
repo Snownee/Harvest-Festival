@@ -1,6 +1,5 @@
 package joshie.harvest.quests.player.friendship;
 
-import java.util.List;
 import java.util.Set;
 
 import joshie.harvest.api.HFApi;
@@ -56,39 +55,31 @@ public class QuestJenni15KWednesday extends QuestFriendshipStore {
 
 	@Override
 	public void onQuestCompleted(EntityPlayer player) {
-		if (HFApi.quests.getCurrentQuests(player).contains(getQuest())) {
-			List<ItemStack> stacks = getRewardStacks(player);
-			if (stacks != null) {
-				for (ItemStack stack : stacks) {
-					rewardItem(player, stack);
-				}
+		//Update the signs for the general store
+		HFApi.quests.completeQuestConditionally(getQuest(), player);
+		TownBuilding building = TownHelper.getClosestTownToEntity(player, false).getBuilding(HFBuildings.SUPERMARKET);
+		if (building != null) {
+			World world = player.world;
+			BlockPos pos = building.pos.up(2);
+			if (building.rotation == Rotation.CLOCKWISE_90) { //North
+				pos = pos.offset(EnumFacing.WEST, 12).offset(EnumFacing.SOUTH, 12);
+			} else if (building.rotation == Rotation.COUNTERCLOCKWISE_90) { //South
+				pos = pos.offset(EnumFacing.EAST, 12).offset(EnumFacing.NORTH, 12);
+			} else if (building.rotation == Rotation.NONE) {
+				pos = pos.offset(EnumFacing.EAST, 12).offset(EnumFacing.SOUTH, 12);
+			} else if (building.rotation == Rotation.CLOCKWISE_180) {
+				pos = pos.offset(EnumFacing.WEST, 12).offset(EnumFacing.NORTH, 12);
 			}
-		} else {
-			//Update the signs for the general store
-			HFApi.quests.completeQuestConditionally(getQuest(), player);
-			TownBuilding building = TownHelper.getClosestTownToEntity(player, false).getBuilding(HFBuildings.SUPERMARKET);
-			if (building != null) {
-				World world = player.world;
-				BlockPos pos = building.pos.up(2);
-				if (building.rotation == Rotation.CLOCKWISE_90) { //North
-					pos = pos.offset(EnumFacing.WEST, 12).offset(EnumFacing.SOUTH, 12);
-				} else if (building.rotation == Rotation.COUNTERCLOCKWISE_90) { //South
-					pos = pos.offset(EnumFacing.EAST, 12).offset(EnumFacing.NORTH, 12);
-				} else if (building.rotation == Rotation.NONE) {
-					pos = pos.offset(EnumFacing.EAST, 12).offset(EnumFacing.SOUTH, 12);
-				} else if (building.rotation == Rotation.CLOCKWISE_180) {
-					pos = pos.offset(EnumFacing.WEST, 12).offset(EnumFacing.NORTH, 12);
-				}
 
-				TileEntity tile = world.getTileEntity(pos);
-				if (tile instanceof TileEntitySign) {
-					TileEntitySign sign = ((TileEntitySign) tile);
-					sign.signText[1] = new TextComponentString("Monday-Friday");
-					sign.markDirty();
-					IBlockState state = world.getBlockState(sign.getPos());
-					world.notifyBlockUpdate(sign.getPos(), state, state, 3);
-				}
+			TileEntity tile = world.getTileEntity(pos);
+			if (tile instanceof TileEntitySign) {
+				TileEntitySign sign = ((TileEntitySign) tile);
+				sign.signText[1] = new TextComponentString("Monday-Friday");
+				sign.markDirty();
+				IBlockState state = world.getBlockState(sign.getPos());
+				world.notifyBlockUpdate(sign.getPos(), state, state, 3);
 			}
 		}
+		super.onQuestCompleted(player);
 	}
 }

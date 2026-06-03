@@ -20,7 +20,7 @@ public class QuestDataClient extends QuestData {
 	public void markCompleted(@Nonnull World world, @Nullable EntityPlayer player, Quest quest, boolean rewards) {
 		Quest aQuest = getAQuest(quest);
 		if (aQuest != null && rewards && player != null) {
-			aQuest.onQuestCompleted(player); //Complete quest then add notes
+//			aQuest.onQuestCompleted(player); //Complete quest then add notes
 			aQuest.getNotes().stream().forEach(note -> HFApi.player.getTrackingForPlayer(player).learnNote(note));
 		}
 

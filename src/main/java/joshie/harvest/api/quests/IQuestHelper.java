@@ -83,6 +83,8 @@ public interface IQuestHelper {
 	 */
 	List<Quest> getCurrentQuests(EntityPlayer player);
 
+	List<Quest> getFinishedQuests(@Nonnull EntityPlayer player);
+
 	boolean startQuest(Quest quest, EntityPlayer player, @Nullable NBTTagCompound tag);
 
 	void revokeQuest(Quest quest, EntityPlayer player);

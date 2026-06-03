@@ -146,6 +146,19 @@ public class QuestHelper implements IQuestHelper {
 	}
 
 	@Override
+	public List<Quest> getFinishedQuests(@Nonnull EntityPlayer player) {
+		if (isFakePlayer(player)) {
+			return EMPTY;
+		}
+		List<Quest> all = new ArrayList<>();
+		all.addAll(HFTrackers.getPlayerTrackerFromPlayer(player).getQuests().getFinished());
+		all.addAll(TownHelper.getClosestTownToEntity(player, false).getQuests().getFinished());
+		all.sort((Comparator.comparing(o -> String.valueOf(o.getRegistryName()))));
+		all.sort((Comparator.comparing(Quest::getPriority)));
+		return all;
+	}
+
+	@Override
 	public boolean startQuest(Quest quest, EntityPlayer player, @Nullable NBTTagCompound tag) {
 		if (!player.world.isRemote) {
 			if (quest.getQuestType() == TargetType.PLAYER) {

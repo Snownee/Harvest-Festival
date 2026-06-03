@@ -2,6 +2,8 @@ package joshie.harvest.player.command;
 
 import java.util.List;
 
+import com.google.common.collect.Lists;
+
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import joshie.harvest.HarvestFestival;
@@ -18,6 +20,7 @@ import net.minecraft.command.WrongUsageException;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.TextComponentString;
 
 @HFCommand
 @SuppressWarnings("unused")
@@ -31,7 +34,7 @@ public class HFCommandRelationship extends CommandBase {
 	@Override
 	@Nonnull
 	public String getUsage(@Nonnull ICommandSender sender) {
-		return "/hf relationship [player] <npc|all|clear> <value>";
+		return "/hf relationship [player] <npc|all|clear> <value> OR /hf relationship <npc|all>";
 	}
 
 	@Override
@@ -44,7 +47,21 @@ public class HFCommandRelationship extends CommandBase {
 			@Nonnull MinecraftServer server,
 			@Nonnull ICommandSender sender,
 			@Nonnull String[] parameters) throws CommandException {
-		if (parameters.length == 2 || parameters.length == 3) {
+		if (parameters.length == 1) {
+			EntityPlayerMP player = CommandBase.getCommandSenderAsPlayer(sender);
+			RelationshipDataServer relationships = HFTrackers.<PlayerTrackerServer>getPlayerTrackerFromPlayer(player).getRelationships();
+			String npc = parameters[0];
+			if (npc.equals("all")) {
+				NPC.REGISTRY.values().forEach(npcz -> sender.sendMessage(new TextComponentString(
+						npcz.getResource() + ": " + relationships.getRelationship(npcz))));
+			} else {
+				NPC theNPC = NPC.REGISTRY.get(HarvestFestival.id(npc));
+				if (theNPC != null) {
+					sender.sendMessage(new TextComponentString(
+							theNPC.getResource() + ": " + relationships.getRelationship(theNPC)));
+				}
+			}
+		} else if (parameters.length == 2 || parameters.length == 3) {
 			EntityPlayerMP player = parameters.length == 2 ? CommandBase.getCommandSenderAsPlayer(sender) : CommandBase.getPlayer(
 					server,
 					sender,
@@ -78,7 +95,11 @@ public class HFCommandRelationship extends CommandBase {
 	@Override
 	public List<String> getTabCompletions(MinecraftServer server, ICommandSender sender, String[] args, @Nullable BlockPos targetPos) {
 		if (args.length == 1) {
-			return getListOfStringsMatchingLastWord(args, server.getOnlinePlayerNames());
+			List<String> list = Lists.newArrayList();
+			list.add("all");
+			list.addAll(getListOfStringsMatchingLastWord(args, server.getOnlinePlayerNames()));
+			list.addAll(getListOfStringsMatchingLastWord(args, NPC.REGISTRY.keySet()));
+			return list;
 		} else if (args.length == 2) {
 			return getListOfStringsMatchingLastWord(args, NPC.REGISTRY.keySet());
 		}
